@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Admin\Desktop\RE\ChickWinx64\Microsoft.Data.Sqlite.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{208F0BF4-1BAC-4E30-A0C9-5450A24D5707}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.Data.Sqlite</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <ApplicationVersion>6.0.4.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Data.Sqlite</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>lib\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.ComponentModel.Primitives" />
+    <Reference Include="System.Data.Common" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Memory">
+      <HintPath>lib\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Thread" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqliteConnectionExtensions.cs" />
+    <Compile Include="SqliteBlob.cs" />
+    <Compile Include="SqliteCacheMode.cs" />
+    <Compile Include="SqliteCommand.cs" />
+    <Compile Include="SqliteConnection.cs" />
+    <Compile Include="SqliteConnectionFactory.cs" />
+    <Compile Include="SqliteConnectionInternal.cs" />
+    <Compile Include="SqliteConnectionPool.cs" />
+    <Compile Include="SqliteConnectionPoolGroup.cs" />
+    <Compile Include="SqliteConnectionStringBuilder.cs" />
+    <Compile Include="SqliteDataReader.cs" />
+    <Compile Include="SqliteDataRecord.cs" />
+    <Compile Include="SqliteException.cs" />
+    <Compile Include="SqliteFactory.cs" />
+    <Compile Include="SqliteOpenMode.cs" />
+    <Compile Include="SqliteParameter.cs" />
+    <Compile Include="SqliteParameterBinder.cs" />
+    <Compile Include="SqliteParameterCollection.cs" />
+    <Compile Include="SqliteParameterReader.cs" />
+    <Compile Include="SqliteResultBinder.cs" />
+    <Compile Include="SqliteTransaction.cs" />
+    <Compile Include="SqliteType.cs" />
+    <Compile Include="SqliteValueBinder.cs" />
+    <Compile Include="SqliteValueReader.cs" />
+    <Compile Include="Utilities\ApplicationDataHelper.cs" />
+    <Compile Include="Utilities\BundleInitializer.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="System\TypeExtensions.cs" />
+    <Compile Include="SQLitePCL\SQLitePCLExtensions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Admin\Desktop\RE\ChickWinx64\ImGui.NET.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F2645A4-A254-4F06-BAAE-B4BDC7F63670}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ImGui.NET</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <ApplicationVersion>1.88.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ImGuiNET</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe" />
+    <Reference Include="System.Runtime.InteropServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImColor.cs" />
+    <Compile Include="ImColorPtr.cs" />
+    <Compile Include="ImDrawChannel.cs" />
+    <Compile Include="ImDrawChannelPtr.cs" />
+    <Compile Include="ImDrawCmd.cs" />
+    <Compile Include="ImDrawCmdPtr.cs" />
+    <Compile Include="ImDrawCmdHeader.cs" />
+    <Compile Include="ImDrawCmdHeaderPtr.cs" />
+    <Compile Include="ImDrawData.cs" />
+    <Compile Include="ImDrawDataPtr.cs" />
+    <Compile Include="ImDrawFlags.cs" />
+    <Compile Include="ImDrawList.cs" />
+    <Compile Include="ImDrawListPtr.cs" />
+    <Compile Include="ImDrawListFlags.cs" />
+    <Compile Include="ImDrawListSplitter.cs" />
+    <Compile Include="ImDrawListSplitterPtr.cs" />
+    <Compile Include="ImDrawVert.cs" />
+    <Compile Include="ImDrawVertPtr.cs" />
+    <Compile Include="ImFont.cs" />
+    <Compile Include="ImFontPtr.cs" />
+    <Compile Include="ImFontAtlas.cs" />
+    <Compile Include="ImFontAtlasPtr.cs" />
+    <Compile Include="ImFontAtlasCustomRect.cs" />
+    <Compile Include="ImFontAtlasCustomRectPtr.cs" />
+    <Compile Include="ImFontAtlasFlags.cs" />
+    <Compile Include="ImFontConfig.cs" />
+    <Compile Include="ImFontConfigPtr.cs" />
+    <Compile Include="ImFontGlyph.cs" />
+    <Compile Include="ImFontGlyphPtr.cs" />
+    <Compile Include="ImFontGlyphRangesBuilder.cs" />
+    <Compile Include="ImFontGlyphRangesBuilderPtr.cs" />
+    <Compile Include="ImGui.cs" />
+    <Compile Include="ImGuiBackendFlags.cs" />
+    <Compile Include="ImGuiButtonFlags.cs" />
+    <Compile Include="ImGuiCol.cs" />
+    <Compile Include="ImGuiColorEditFlags.cs" />
+    <Compile Include="ImGuiComboFlags.cs" />
+    <Compile Include="ImGuiCond.cs" />
+    <Compile Include="ImGuiConfigFlags.cs" />
+    <Compile Include="ImGuiDataType.cs" />
+    <Compile Include="ImGuiDir.cs" />
+    <Compile Include="ImGuiDockNodeFlags.cs" />
+    <Compile Include="ImGuiDragDropFlags.cs" />
+    <Compile Include="ImGuiFocusedFlags.cs" />
+    <Compile Include="ImGuiHoveredFlags.cs" />
+    <Compile Include="ImGuiInputTextCallbackData.cs" />
+    <Compile Include="ImGuiInputTextCallbackDataPtr.cs" />
+    <Compile Include="ImGuiInputTextFlags.cs" />
+    <Compile Include="ImGuiIO.cs" />
+    <Compile Include="ImGuiIOPtr.cs" />
+    <Compile Include="ImGuiKey.cs" />
+    <Compile Include="ImGuiKeyData.cs" />
+    <Compile Include="ImGuiKeyDataPtr.cs" />
+    <Compile Include="ImGuiListClipper.cs" />
+    <Compile Include="ImGuiListClipperPtr.cs" />
+    <Compile Include="ImGuiModFlags.cs" />
+    <Compile Include="ImGuiMouseButton.cs" />
+    <Compile Include="ImGuiMouseCursor.cs" />
+    <Compile Include="ImGuiNative.cs" />
+    <Compile Include="ImGuiNavInput.cs" />
+    <Compile Include="ImGuiOnceUponAFrame.cs" />
+    <Compile Include="ImGuiOnceUponAFramePtr.cs" />
+    <Compile Include="ImGuiPayload.cs" />
+    <Compile Include="ImGuiPayloadPtr.cs" />
+    <Compile Include="ImGuiPlatformImeData.cs" />
+    <Compile Include="ImGuiPlatformImeDataPtr.cs" />
+    <Compile Include="ImGuiPlatformIO.cs" />
+    <Compile Include="ImGuiPlatformIOPtr.cs" />
+    <Compile Include="ImGuiPlatformMonitor.cs" />
+    <Compile Include="ImGuiPlatformMonitorPtr.cs" />
+    <Compile Include="ImGuiPopupFlags.cs" />
+    <Compile Include="ImGuiSelectableFlags.cs" />
+    <Compile Include="ImGuiSizeCallbackData.cs" />
+    <Compile Include="ImGuiSizeCallbackDataPtr.cs" />
+    <Compile Include="ImGuiSliderFlags.cs" />
+    <Compile Include="ImGuiSortDirection.cs" />
+    <Compile Include="ImGuiStorage.cs" />
+    <Compile Include="ImGuiStoragePtr.cs" />
+    <Compile Include="ImGuiStyle.cs" />
+    <Compile Include="ImGuiStylePtr.cs" />
+    <Compile Include="ImGuiStyleVar.cs" />
+    <Compile Include="ImGuiTabBarFlags.cs" />
+    <Compile Include="ImGuiTabItemFlags.cs" />
+    <Compile Include="ImGuiTableBgTarget.cs" />
+    <Compile Include="ImGuiTableColumnFlags.cs" />
+    <Compile Include="ImGuiTableColumnSortSpecs.cs" />
+    <Compile Include="ImGuiTableColumnSortSpecsPtr.cs" />
+    <Compile Include="ImGuiTableFlags.cs" />
+    <Compile Include="ImGuiTableRowFlags.cs" />
+    <Compile Include="ImGuiTableSortSpecs.cs" />
+    <Compile Include="ImGuiTableSortSpecsPtr.cs" />
+    <Compile Include="ImGuiTextBuffer.cs" />
+    <Compile Include="ImGuiTextBufferPtr.cs" />
+    <Compile Include="ImGuiTextFilter.cs" />
+    <Compile Include="ImGuiTextFilterPtr.cs" />
+    <Compile Include="ImGuiTextRange.cs" />
+    <Compile Include="ImGuiTextRangePtr.cs" />
+    <Compile Include="ImGuiTreeNodeFlags.cs" />
+    <Compile Include="ImGuiViewport.cs" />
+    <Compile Include="ImGuiViewportPtr.cs" />
+    <Compile Include="ImGuiViewportFlags.cs" />
+    <Compile Include="ImGuiWindowClass.cs" />
+    <Compile Include="ImGuiWindowClassPtr.cs" />
+    <Compile Include="ImGuiWindowFlags.cs" />
+    <Compile Include="StbTexteditRow.cs" />
+    <Compile Include="StbTexteditRowPtr.cs" />
+    <Compile Include="StbUndoRecord.cs" />
+    <Compile Include="StbUndoRecordPtr.cs" />
+    <Compile Include="StbUndoState.cs" />
+    <Compile Include="StbUndoStatePtr.cs" />
+    <Compile Include="STB_TexteditState.cs" />
+    <Compile Include="STB_TexteditStatePtr.cs" />
+    <Compile Include="ImGuiSizeCallback.cs" />
+    <Compile Include="ImGuiInputTextCallback.cs" />
+    <Compile Include="ImVector.cs" />
+    <Compile Include="ImVector`1.cs" />
+    <Compile Include="ImPtrVector`1.cs" />
+    <Compile Include="NullTerminatedString.cs" />
+    <Compile Include="ImGuiStoragePair.cs" />
+    <Compile Include="ImGuiStoragePairPtr.cs" />
+    <Compile Include="UnionValue.cs" />
+    <Compile Include="RangeAccessor`1.cs" />
+    <Compile Include="RangePtrAccessor`1.cs" />
+    <Compile Include="RangeAccessorExtensions.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
